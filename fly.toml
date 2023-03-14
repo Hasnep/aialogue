@@ -1,0 +1,4 @@
+app = "aialogue"
+
+[build]
+dockerfile = "Dockerfile"

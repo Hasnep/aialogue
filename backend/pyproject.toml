@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "aialogue"
+version = "0.1.0"
+description = ""
+authors = ["Hannes <h@nnes.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.94.1"
+openai = "^0.27.2"
+python-dotenv = "^1.0.0"
+uvicorn = { extras = ["standard"], version = "^0.21.0" }
+pydantic = "^1.10.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+flake8-pyproject = "^1.2.2"
+isort = "^5.12.0"
+pyright = "^1.1.298"
+ssort = "^0.11.6"
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+ignore = ["E203", "E501", "F401", "W503"]
+
+[tool.pyright]
+strict = ["**/*"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
