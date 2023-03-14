@@ -1,4 +1,4 @@
-FROM node:18 AS builder-node
+FROM node:19 AS builder-node
 
 WORKDIR /frontend
 
